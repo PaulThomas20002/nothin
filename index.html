@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Marquee Tag</title>
+	<title>Nothin/title>
 	<style>
+	*{
+		margin-left:0;
+		margin-top:0;
+	}
 	.main {
 		text-align:center;
 	}
@@ -11,19 +15,20 @@
 		padding-bottom:30px;
 	}
 	.geek1 {
-		font-size:36px;
+		font-size:10 rem;
 		font-weight:bold;
 		color:white;
 		padding-bottom:10px;
+		transform:translateX(100%);
+		animation: cssmarquee 10s linear infinite;
 	}
 	</style>
 </head>
 
 <body>
 	<div class = "main">
-	<marquee class="marq" bgcolor = "Green" direction = "left" loop="" >
+	<marquee class="marq" bgcolor = "black" direction = "left" loop="10" >
 		<div class="geek1">Nothin</div>
-		<div class="geek2">NOthing</div>
 	</marquee>
 	</div>
 </body>
